@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "39bdb44b-4462-48b6-ae62-061bda2049b4",
+		"name": "Usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Nuevo Usuario creador por el admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Denil",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "denil@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "rol",
+							"value": "CLIENTE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/nuevoUsuario",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"nuevoUsuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar Rol Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMTRlOTA0YTg1OTlhMzBiOTEyZjEiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxODczOTcsImV4cCI6MTY0Nzc5MjE5N30.2Wcs9vrsaLBq1UA4P5-E9jlYqhrw-hZebVv57jDLU3A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "rol",
+							"value": "CLIENTE",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarRolUsuario/622e33acb1cec852d6fd711b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarRolUsuario",
+						"622e33acb1cec852d6fd711b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar Usuario",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMTRlOTA0YTg1OTlhMzBiOTEyZjEiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxODczOTcsImV4cCI6MTY0Nzc5MjE5N30.2Wcs9vrsaLBq1UA4P5-E9jlYqhrw-hZebVv57jDLU3A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Denil Parada",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarUsuario/622e33acb1cec852d6fd711b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarUsuario",
+						"622e33acb1cec852d6fd711b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar Usuario",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMTRlOTA0YTg1OTlhMzBiOTEyZjEiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxODczOTcsImV4cCI6MTY0Nzc5MjE5N30.2Wcs9vrsaLBq1UA4P5-E9jlYqhrw-hZebVv57jDLU3A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarUsuario/622e33acb1cec852d6fd711b",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarUsuario",
+						"622e33acb1cec852d6fd711b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar Cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Denil",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "denil@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/Registrar",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"Registrar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Perfil Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCIsImVtYWlsIjoiZGVuaWxAZ21haWwuY29tIiwicm9sIjoiQ0xJRU5URSIsImlhdCI6MTY0NzE5NTMxOCwiZXhwIjoxNjQ3ODAwMTE4fQ.zaDE6l__0BcNUVRvpQ61iBHKsUrbUKY_b8ERTEW1MwM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Denil Parada",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/EditarPerfil",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"EditarPerfil"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Perfil Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCBQYXJhZGEiLCJlbWFpbCI6ImRlbmlsQGdtYWlsLmNvbSIsInJvbCI6IkNMSUVOVEUiLCJpYXQiOjE2NDcxOTYyMjAsImV4cCI6MTY0NzgwMTAyMH0.2tZFN1Oy0YuFBcDB8VXi4_oQXfxvwQYn7XztFVpMXOs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "eliminar",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/EliminarPerfil",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"EliminarPerfil"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

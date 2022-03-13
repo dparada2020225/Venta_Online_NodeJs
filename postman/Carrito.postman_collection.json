@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "fd5def35-458f-4f17-a083-0fa7d9c1d23f",
+		"name": "Carrito",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "agregar Producto Carrito Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCIsImVtYWlsIjoiZGVuaWxAZ21haWwuY29tIiwicm9sIjoiQ0xJRU5URSIsImlhdCI6MTY0NzE5NTMxOCwiZXhwIjoxNjQ3ODAwMTE4fQ.zaDE6l__0BcNUVRvpQ61iBHKsUrbUKY_b8ERTEW1MwM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Pepsi",
+							"type": "text"
+						},
+						{
+							"key": "cantidad",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarProducto",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarProducto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar Producto Carrito",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCIsImVtYWlsIjoiZGVuaWxAZ21haWwuY29tIiwicm9sIjoiQ0xJRU5URSIsImlhdCI6MTY0NzE5NTMxOCwiZXhwIjoxNjQ3ODAwMTE4fQ.zaDE6l__0BcNUVRvpQ61iBHKsUrbUKY_b8ERTEW1MwM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/eliminarProducto/622e3657b1cec852d6fd7150?=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCIsImVtYWlsIjoiZGVuaWxAZ21haWwuY29tIiwicm9sIjoiQ0xJRU5URSIsImlhdCI6MTY0NzE5NTMxOCwiZXhwIjoxNjQ3ODAwMTE4fQ.zaDE6l__0BcNUVRvpQ61iBHKsUrbUKY_b8ERTEW1MwM",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"eliminarProducto",
+						"622e3657b1cec852d6fd7150"
+					],
+					"query": [
+						{
+							"key": null,
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCIsImVtYWlsIjoiZGVuaWxAZ21haWwuY29tIiwicm9sIjoiQ0xJRU5URSIsImlhdCI6MTY0NzE5NTMxOCwiZXhwIjoxNjQ3ODAwMTE4fQ.zaDE6l__0BcNUVRvpQ61iBHKsUrbUKY_b8ERTEW1MwM"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

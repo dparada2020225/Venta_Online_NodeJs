@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "45aa6563-0c63-4f51-b524-e7e1903ffcf4",
+		"name": "Facturas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Generar factura",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzQ5Y2IxY2VjODUyZDZmZDcxMjciLCJub21icmUiOiJEZW5pbCIsImVtYWlsIjoiZGVuaWxAZ21haWwuY29tIiwicm9sIjoiQ0xJRU5URSIsImlhdCI6MTY0NzE5NTMxOCwiZXhwIjoxNjQ3ODAwMTE4fQ.zaDE6l__0BcNUVRvpQ61iBHKsUrbUKY_b8ERTEW1MwM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/factura",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"factura"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "facturas que tiene sus usuarios.",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTYxMTEsImV4cCI6MTY0NzgwMDkxMX0.w1iaIxWnetZnNUh_cFHfNIwfIBNd92QepYSUjmhiaQ4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/facturasExistentes",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"facturasExistentes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Productos De Una Factura",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTYxMTEsImV4cCI6MTY0NzgwMDkxMX0.w1iaIxWnetZnNUh_cFHfNIwfIBNd92QepYSUjmhiaQ4",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/ProductosDeUnaFactura/622e36c8b1cec852d6fd715d",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ProductosDeUnaFactura",
+						"622e36c8b1cec852d6fd715d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Productos Agotados",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/ProductosAgotados",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ProductosAgotados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Productos Mas Vendidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/ProductosMasVendidos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"ProductosMasVendidos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

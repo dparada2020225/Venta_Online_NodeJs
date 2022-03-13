@@ -1,0 +1,57 @@
+Denil José Parada Cabrera 
+
+2020225
+
+IN6BV
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*app
+*index
+*package.json y package-lok.json
+
+*service -jwt
+*middlewares -autenticacion
+
+
+*modelos
+	-carrito
+	-categorias
+	-factura
+	-producto
+	-usuario
+
+*controller
+	-carrito
+	-categorias
+	-factura
+	-producto
+	-usuario
+
+*Routes
+	-carrito     2
+	-categorias  5  1  4
+	-factura     8  1  7  
+	-producto    4
+	-usuario     8
+	total de rutas 27
+
+
+

@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "278e8d25-e051-4f80-8ae3-4206c0e21946",
+		"name": "Productos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Agregar Productos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Borrar1",
+							"type": "text"
+						},
+						{
+							"key": "stock",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "IDcategoria",
+							"value": "622e3159b1cec852d6fd70fc",
+							"type": "text"
+						},
+						{
+							"key": "precio",
+							"value": "11",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/agregarProductos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"agregarProductos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver todos los Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/productos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editar Producto",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Borrar_2.0",
+							"type": "text"
+						},
+						{
+							"key": "IDcategoria",
+							"value": "622e3159b1cec852d6fd70fc",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/editarProducto/622e3191b1cec852d6fd70fe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"editarProducto",
+						"622e3191b1cec852d6fd70fe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "control Stock",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMTRlOTA0YTg1OTlhMzBiOTEyZjEiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxODczOTcsImV4cCI6MTY0Nzc5MjE5N30.2Wcs9vrsaLBq1UA4P5-E9jlYqhrw-hZebVv57jDLU3A",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "stock",
+							"value": "-50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/controlStock/622e3191b1cec852d6fd70fe",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"controlStock",
+						"622e3191b1cec852d6fd70fe"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

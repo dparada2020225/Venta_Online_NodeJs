@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "7ea961f6-b1e0-4a6e-9d69-bf60f8ab28c4",
+		"name": "Categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Categoria",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Borrar",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/CrearCategoria",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"CrearCategoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver todas las Categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/Categorias",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"Categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Categoria",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Borrar 2.0",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/api/EditarCategoria/622e3159b1cec852d6fd70fc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"EditarCategoria",
+						"622e3159b1cec852d6fd70fc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar y si tiene productos a default",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MjJlMzBkOTEwZjYwYjc0ODk0N2E0ZjAiLCJub21icmUiOiJBRE1JTiIsImVtYWlsIjoiQURNSU5AZ21haWwuY29tIiwicm9sIjoiQURNSU4iLCJpYXQiOjE2NDcxOTQ0NDAsImV4cCI6MTY0Nzc5OTI0MH0.B5CU5Ho51MbKH-8odvldTumkVQkGR18a9F6f-ZryjOA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/api/EliminarCategoria/622e3159b1cec852d6fd70fc",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"EliminarCategoria",
+						"622e3159b1cec852d6fd70fc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
